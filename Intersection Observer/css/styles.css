@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container.one{
+    background-color: aqua;
+}
+
+.container.two{
+    background-color: rgb(255, 187, 0);
+}
+
+.container.three{
+    background-color: rgb(46, 240, 12);
+}
+
+.container.four{
+    background-color: rgb(255, 0, 170);
+}
+
+.container.five{
+    background-color: rgb(255, 0, 0);
+}
+
+.container .content{
+    margin: auto 200px;
+    
+}
+
+.section{
+    opacity: 1;
+    transform: translateY(500px);
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out;
+    -ms-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    -webkit-transform: translateY(500px);
+    -moz-transform: translateY(500px);
+    -ms-transform: translateY(500px);
+    -o-transform: translateY(500px);
+}
+
+.container .content p,
+.container .content h3{
+    padding:15px;
+}
+
+.fade{
+    opacity:1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+.hover-border{
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.hover-border::after{
+    content:'';
+    width:5%;
+    height:7px;
+    background: #ee0979;
+    /*fallbackforoldbrowsers*/background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);
+    /*Chrome10-25,Safari5.1-6*/background: linear-gradient(to left, #ff6a00, #ee0979);
+    /*W3C,IE10+/Edge,Firefox16+,Chrome26+,Opera12+,Safari7+*/transform: ;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.hover-border:hover::after{
+    right: 0%;
+    width: 100%;
+}
+
+.main{
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
